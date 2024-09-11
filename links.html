@@ -1,0 +1,53 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function websiteone() { const w = window.open() // access the "about:blank" window you've opened
+w.document.body.innerHTML = "<title>Gamez!</title><iframe src='link1.html' frameborder='0' style='height:780px;width:100%;frameborder:0;'>"
+// or access other parts to add more JS or CSS
+const style = w.document.createElement("link")
+link.href = "/path/to.css"
+link.rel = "stylesheet"
+w.document.head.appendChild(style) 
+    </script>
+
+    <script>
+        function websitetwo() { const w = window.open() // access the "about:blank" window you've opened
+w.document.body.innerHTML = "<title>Gamez!</title><iframe src='link2.html' frameborder='0' style='height:780px;width:100%;frameborder:0;'>"
+// or access other parts to add more JS or CSS
+const style = w.document.createElement("link")
+link.href = "/path/to.css"
+link.rel = "stylesheet"
+w.document.head.appendChild(style) }
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Links to the gamez:</h1>
+    </center>
+
+    <center>
+        <button class="button" onclick="websiteone();">Link 1</button>
+        <button class="button" onclick="websitetwo();">Link 2</button>
+    </center>
+    <style>
+        .button {
+            font-size: x-large;
+            text-align: center;
+            background-color: #e7e7e7; color: black;
+            padding: 15px 25px;
+            border-radius: 4px;
+
+        }
+
+        .button {
+            transition-duration: 0.4s;
+        }
+
+        .button:hover {
+            background-color: #6cff32; /* Green */
+            color: rgb(255, 255, 255);
+        }
+
+    </style>
+</body>
+</html>
